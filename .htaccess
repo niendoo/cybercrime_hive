@@ -1,0 +1,24 @@
+# Enable clean URLs for the entire CyberCrime Hive portal
+RewriteEngine On
+
+
+# Handle /knowledge/slug requests
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^knowledge/([a-z0-9-]+)/?$ knowledge/article.php?slug=$1 [L,QSA]
+
+# Handle root-level /slug requests (but exclude feedback directory and other important files)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/admin/
+RewriteCond %{REQUEST_URI} !^/reports/
+RewriteCond %{REQUEST_URI} !^/user/
+RewriteCond %{REQUEST_URI} !^/assets/
+RewriteCond %{REQUEST_URI} !^/auth/
+RewriteCond %{REQUEST_URI} !^/feedback\.php
+RewriteCond %{REQUEST_URI} !^/api/
+RewriteRule ^([a-z0-9-]+)/?$ knowledge/article.php?slug=$1 [L,QSA]
+
+# Redirect old URLs to new clean URLs
+RewriteCond %{THE_REQUEST} \s/knowledge/article\.php\?slug=([^&\s]+) [NC]
+RewriteRule ^ knowledge/%1? [R=301,L]

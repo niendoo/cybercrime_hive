@@ -1,0 +1,102 @@
+# LiteSpeed-optimized .htaccess for CyberCrime Hive portal
+# This configuration is specifically optimized for LiteSpeed Web Server
+
+RewriteEngine On
+
+
+# Security Headers (LiteSpeed compatible)
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self';"
+</IfModule>
+
+# Force HTTPS (LiteSpeed compatible)
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Handle /knowledge/slug requests
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^knowledge/([a-z0-9-]+)/?$ knowledge/article.php?slug=$1 [L,QSA]
+
+# Handle root-level /slug requests (but exclude feedback directory and other important files)
+# CRITICAL: This section prevents feedback directory from being rewritten
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/admin/
+RewriteCond %{REQUEST_URI} !^/reports/
+RewriteCond %{REQUEST_URI} !^/user/
+RewriteCond %{REQUEST_URI} !^/assets/
+RewriteCond %{REQUEST_URI} !^/auth/
+RewriteCond %{REQUEST_URI} !^/feedback\.php
+RewriteCond %{REQUEST_URI} !^/api/
+RewriteCond %{REQUEST_URI} !^/phpinfo\.php
+RewriteCond %{REQUEST_URI} !^/test_
+RewriteRule ^([a-z0-9-]+)/?$ knowledge/article.php?slug=$1 [L,QSA]
+
+# Redirect old URLs to new clean URLs
+RewriteCond %{THE_REQUEST} \s/knowledge/article\.php\?slug=([^&\s]+) [NC]
+RewriteRule ^ knowledge/%1? [R=301,L]
+
+# Block access to sensitive files (LiteSpeed compatible)
+<Files ".env*">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</Files>
+
+<Files "*.sql">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</Files>
+
+<Files "composer.*">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</Files>
+
+# LiteSpeed Cache optimization (if LiteSpeed Cache is enabled)
+<IfModule LiteSpeed>
+    # Cache static files
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$">
+        ExpiresActive On
+        ExpiresDefault "access plus 1 month"
+    </FilesMatch>
+    
+    # Don't cache PHP files
+    <FilesMatch "\.php$">
+        ExpiresActive Off
+        Header unset Cache-Control
+        Header unset Expires
+    </FilesMatch>
+</IfModule>
+
+# Prevent access to backup and temporary files
+<FilesMatch "\.(bak|backup|old|tmp|temp|log)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>

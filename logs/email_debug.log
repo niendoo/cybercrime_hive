@@ -1,0 +1,232 @@
+[2025-10-11 18:17:15] PHPMailer Debug: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-46fb4989601sm99985925e9.9 - gsmtp
+
+[2025-10-11 18:17:15] PHPMailer Debug: CLIENT -> SERVER: EHLO localhost
+
+[2025-10-11 18:17:15] PHPMailer Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [154.161.181.72]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[2025-10-11 18:17:15] PHPMailer Debug: CLIENT -> SERVER: AUTH LOGIN
+
+[2025-10-11 18:17:15] PHPMailer Debug: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[2025-10-11 18:17:15] PHPMailer Debug: CLIENT -> SERVER: [credentials hidden]
+[2025-10-11 18:17:15] PHPMailer Debug: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[2025-10-11 18:17:15] PHPMailer Debug: CLIENT -> SERVER: [credentials hidden]
+[2025-10-11 18:17:15] PHPMailer Debug: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[2025-10-11 18:17:15] PHPMailer Debug: CLIENT -> SERVER: MAIL FROM:<niendoo2@gmail.com>
+
+[2025-10-11 18:17:16] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-46fb4989601sm99985925e9.9 - gsmtp
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: RCPT TO:<abdulrauf4611@gmail.com>
+
+[2025-10-11 18:17:16] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-46fb4989601sm99985925e9.9 - gsmtp
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: DATA
+
+[2025-10-11 18:17:16] PHPMailer Debug: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-46fb4989601sm99985925e9.9 - gsmtp
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Date: Sat, 11 Oct 2025 18:17:14 +0000
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: To: abdulrauf4611@gmail.com
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: From: CyberCrime Hive <niendoo2@gmail.com>
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Subject: CyberCrime Hive - Notification
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Message-ID: <2UtB3G0yb3GUXNCDNgu8ijIr3LCxAPNKEbbq42fA@localhost>
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: MIME-Version: 1.0
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER:  boundary="b1=_2UtB3G0yb3GUXNCDNgu8ijIr3LCxAPNKEbbq42fA"
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: --b1=_2UtB3G0yb3GUXNCDNgu8ijIr3LCxAPNKEbbq42fA
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Dear User,
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Your cybercrime report has been resolved. We would appreciate your feedback to help us improve our services.
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Please click the following link to provide your feedback:
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: http://localhost/cybercrime_hive/feedback/?token=8fa1b751eeb8b0b5cc15174134e2c662933bc9af81be6f02261793841992647a
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: This feedback link will expire in 7 days.
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Thank you for using our service.
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Best regards,
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: CyberCrime Hive Team
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: --b1=_2UtB3G0yb3GUXNCDNgu8ijIr3LCxAPNKEbbq42fA
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Dear User,<br />
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: <br />
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Your cybercrime report has been resolved. We would appreciate your feedback to help us improve our services.<br />
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: <br />
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Please click the following link to provide your feedback:<br />
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: http://localhost/cybercrime_hive/feedback/?token=8fa1b751eeb8b0b5cc15174134e2c662933bc9af81be6f02261793841992647a<br />
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: <br />
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: This feedback link will expire in 7 days.<br />
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: <br />
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Thank you for using our service.<br />
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: <br />
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: Best regards,<br />
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: CyberCrime Hive Team
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: --b1=_2UtB3G0yb3GUXNCDNgu8ijIr3LCxAPNKEbbq42fA--
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:16] PHPMailer Debug: CLIENT -> SERVER: .
+
+[2025-10-11 18:17:17] PHPMailer Debug: SERVER -> CLIENT: 250 2.0.0 OK  1760206636 5b1f17b1804b1-46fb4989601sm99985925e9.9 - gsmtp
+
+[2025-10-11 18:17:17] PHPMailer Debug: CLIENT -> SERVER: QUIT
+
+[2025-10-11 18:17:17] PHPMailer Debug: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-46fb4989601sm99985925e9.9 - gsmtp
+
+[2025-10-11 18:17:17] Email sent successfully using Gmail SMTP to: abdulrauf4611@gmail.com
+[2025-10-11 18:17:18] PHPMailer Debug: SERVER -> CLIENT: 220 smtp.gmail.com ESMTP 5b1f17b1804b1-46fb497b8fcsm101424755e9.2 - gsmtp
+
+[2025-10-11 18:17:18] PHPMailer Debug: CLIENT -> SERVER: EHLO localhost
+
+[2025-10-11 18:17:18] PHPMailer Debug: SERVER -> CLIENT: 250-smtp.gmail.com at your service, [154.161.181.72]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+[2025-10-11 18:17:18] PHPMailer Debug: CLIENT -> SERVER: AUTH LOGIN
+
+[2025-10-11 18:17:18] PHPMailer Debug: SERVER -> CLIENT: 334 VXNlcm5hbWU6
+
+[2025-10-11 18:17:18] PHPMailer Debug: CLIENT -> SERVER: [credentials hidden]
+[2025-10-11 18:17:18] PHPMailer Debug: SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+
+[2025-10-11 18:17:18] PHPMailer Debug: CLIENT -> SERVER: [credentials hidden]
+[2025-10-11 18:17:18] PHPMailer Debug: SERVER -> CLIENT: 235 2.7.0 Accepted
+
+[2025-10-11 18:17:18] PHPMailer Debug: CLIENT -> SERVER: MAIL FROM:<niendoo2@gmail.com>
+
+[2025-10-11 18:17:19] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.0 OK 5b1f17b1804b1-46fb497b8fcsm101424755e9.2 - gsmtp
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: RCPT TO:<abdulrauf4611@gmail.com>
+
+[2025-10-11 18:17:19] PHPMailer Debug: SERVER -> CLIENT: 250 2.1.5 OK 5b1f17b1804b1-46fb497b8fcsm101424755e9.2 - gsmtp
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: DATA
+
+[2025-10-11 18:17:19] PHPMailer Debug: SERVER -> CLIENT: 354 Go ahead 5b1f17b1804b1-46fb497b8fcsm101424755e9.2 - gsmtp
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: Date: Sat, 11 Oct 2025 18:17:17 +0000
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: To: abdulrauf4611@gmail.com
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: From: CyberCrime Hive <niendoo2@gmail.com>
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: Subject: CyberCrime Hive - Notification
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: Message-ID: <4leg7MNypCvFT32ET5CryLPV4X1ac5SNm7Z9iW0cl0@localhost>
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: X-Mailer: PHPMailer 6.10.0 (https://github.com/PHPMailer/PHPMailer)
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: MIME-Version: 1.0
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: Content-Type: multipart/alternative;
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER:  boundary="b1=_4leg7MNypCvFT32ET5CryLPV4X1ac5SNm7Z9iW0cl0"
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: Content-Transfer-Encoding: 8bit
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: --b1=_4leg7MNypCvFT32ET5CryLPV4X1ac5SNm7Z9iW0cl0
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: Content-Type: text/plain; charset=us-ascii
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: Your cybercrime report (Tracking Code: CR2510088F563F) status has been updated to 'Resolved'.
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: --b1=_4leg7MNypCvFT32ET5CryLPV4X1ac5SNm7Z9iW0cl0
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: Content-Type: text/html; charset=us-ascii
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: Your cybercrime report (Tracking Code: CR2510088F563F) status has been updated to 'Resolved'.
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: --b1=_4leg7MNypCvFT32ET5CryLPV4X1ac5SNm7Z9iW0cl0--
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: 
+
+[2025-10-11 18:17:19] PHPMailer Debug: CLIENT -> SERVER: .
+
+[2025-10-11 18:17:20] PHPMailer Debug: SERVER -> CLIENT: 250 2.0.0 OK  1760206639 5b1f17b1804b1-46fb497b8fcsm101424755e9.2 - gsmtp
+
+[2025-10-11 18:17:20] PHPMailer Debug: CLIENT -> SERVER: QUIT
+
+[2025-10-11 18:17:20] PHPMailer Debug: SERVER -> CLIENT: 221 2.0.0 closing connection 5b1f17b1804b1-46fb497b8fcsm101424755e9.2 - gsmtp
+
+[2025-10-11 18:17:20] Email sent successfully using Gmail SMTP to: abdulrauf4611@gmail.com
