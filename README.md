@@ -489,8 +489,8 @@ This project is developed for academic purposes as part of a BSc IT final year p
 - **Name**: Abdul Rauf Abdul Rahaman
 - **Institution**: New Life College, Tamale Campus
 - **Program**: BSc Information Technology
-- **Email**: [Your Email Address]
-- **LinkedIn**: [Your LinkedIn Profile]
+- **Email**: [niendoo2@gmail.com]
+- **LinkedIn**: [[Your LinkedIn Profile](https://www.linkedin.com/in/abdul-rauf-abdul-rahaman-255209106/)]
 
 ### Academic Supervisor
 - **Institution**: New Life College, Tamale Campus
