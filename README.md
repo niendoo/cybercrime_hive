@@ -7,26 +7,6 @@
 
 ---
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Technology Stack](#technology-stack)
-- [System Architecture](#system-architecture)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Database Schema](#database-schema)
-- [API Documentation](#api-documentation)
-- [User Roles & Permissions](#user-roles--permissions)
-- [Security Features](#security-features)
-- [Usage Guide](#usage-guide)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
----
-
 ## 🎯 Overview
 
 CyberCrime Hive is a sophisticated web-based platform designed to streamline the reporting, tracking, and management of cybercrime incidents. Built as a final year project for BSc IT at New Life College, Tamale campus, this system provides a secure, user-friendly interface for both citizens to report cybercrimes and administrators to manage and investigate these reports effectively.
@@ -34,9 +14,9 @@ CyberCrime Hive is a sophisticated web-based platform designed to streamline the
 ### 🎓 Academic Context
 - **Institution**: New Life College, Tamale Campus
 - **Program**: Bachelor of Science in Information Technology (BSc IT)
-- **Project Type**: Final Year Capstone Project
+- **Project Type**: Final Year Project
 - **Developer**: Abdul Rauf Abdul Rahaman
-- **Academic Year**: 2024
+- **Year**: 2025
 
 ### 🌟 Project Objectives
 - Create a centralized platform for cybercrime reporting
@@ -490,15 +470,12 @@ This project is developed for academic purposes as part of a BSc IT final year p
 - **Institution**: New Life College, Tamale Campus
 - **Program**: BSc Information Technology
 - **Email**: [niendoo2@gmail.com]
-- **LinkedIn**: [[Your LinkedIn Profile](https://www.linkedin.com/in/abdul-rauf-abdul-rahaman-255209106/)]
+- **LinkedIn**: [[LinkedIn Profile](https://www.linkedin.com/in/abdul-rauf-abdul-rahaman-255209106/)]
 
-### Academic Supervisor
-- **Institution**: New Life College, Tamale Campus
-- **Department**: Information Technology
 
 ### Project Repository
-- **GitHub**: [Repository URL]
-- **Documentation**: [Documentation URL]
+- **GitHub**: [[Repository URL](https://github.com/niendoo/cybercrime_hive/)]
+- **Documentation**: [[Documentation URL](https://github.com/niendoo/cybercrime_hive/readme.me)]
 
 ---
 
@@ -509,19 +486,4 @@ This project is developed for academic purposes as part of a BSc IT final year p
 - **Open Source Community** - For the tools and libraries that made this project possible
 - **Cybersecurity Professionals** - For insights into real-world cybercrime reporting needs
 
----
 
-## 📊 Project Statistics
-
-- **Development Time**: [Duration]
-- **Lines of Code**: 10,000+
-- **Database Tables**: 15+
-- **Supported Cybercrime Categories**: 50+
-- **Security Features**: 10+
-- **API Endpoints**: 5+
-
----
-
-*This README serves as comprehensive documentation for the CyberCrime Hive project, developed as a final year BSc IT project at New Life College, Tamale Campus by Abdul Rauf Abdul Rahaman.*# cybercrime_hive
-# cybercrime_hive
-# cybercrime_hive
